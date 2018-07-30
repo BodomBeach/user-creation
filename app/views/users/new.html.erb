@@ -1,0 +1,8 @@
+<h1>Création d'utilisateur</h1>
+
+
+<form action="<%= new_user_created_path %>" method="POST">
+  <input type="text" name="username">
+  <input type="submit" value="Submit">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
